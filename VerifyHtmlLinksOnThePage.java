@@ -25,6 +25,7 @@ public class VerifyHtmlLinksOnThePage {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		url = "http://demo.automationtesting.in/";
+		// My changes
 	}
 
 	// How to get the total number of links

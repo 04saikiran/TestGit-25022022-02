@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4249ecd0-d568-4342-b0a7-06380317e1f1" activeEnvironment="Default" name="Prod13" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="2dbf0ee6-e336-486b-9852-e7b5946f6089" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://apis14.loyaltylab.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://apis14.loyaltylab.com</con:endpoint></con:endpoints><con:resource name="AuthenticateUser" path="/loyaltyclientrestapi/Authenticate/User" id="027cb496-5a80-4525-b307-b3c06243479b"><con:settings/><con:parameters/><con:method name="1" id="f768529a-dc2a-4e6c-a415-562319fa0a54" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:user="https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User">user:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User">user:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Retailer" id="a6dd1a13-9a3c-40d2-b3e1-ce9242468301" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Authorization" value="cmVzdHVzZXJAZGZzY2xvLmNvbTpMMHlhbHR5"/>
+  <con:entry key="Connection" value="Close"/>
+  <con:entry key="content-Type" value="application/json"/>
+  <con:entry key="RetailerGuid" value="456533be-e972-480b-8774-98fb7caea4dd"/>
+  <con:entry key="Mode" value="Retailer"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://apis14ext.loyaltylab.com</con:endpoint><con:request/><con:originalUri>https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Vendor" id="a6dd1a13-9a3c-40d2-b3e1-ce9242468301" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Authorization" value="cmVzdHVzZXI0QGRmc2Nsby5jb206TDB5YWx0eTQ1Ng=="/>
+  <con:entry key="Mode" value="Partner"/>
+  <con:entry key="Connection" value="Close"/>
+  <con:entry key="content-Type" value="application/json"/>
+  <con:entry key="RetailerGuid" value="456533be-e972-480b-8774-98fb7caea4dd"/>
+  <con:entry key="PartnerGuid" value="6E872637-1554-471D-A880-85A51482484C"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://apis14.loyaltylab.com</con:endpoint><con:request/><con:originalUri>https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Vendor2" id="a6dd1a13-9a3c-40d2-b3e1-ce9242468301" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Authorization" value="cmVzdHVzZXIzQGRmc2Nsby5jb206TDB5YWx0eTEyMw=="/>
+  <con:entry key="Mode" value="Partner"/>
+  <con:entry key="Connection" value="Close"/>
+  <con:entry key="content-Type" value="application/json"/>
+  <con:entry key="RetailerGuid" value="456533be-e972-480b-8774-98fb7caea4dd"/>
+  <con:entry key="PartnerGuid" value="87960C90-2A83-45F4-9B1C-39DCD2EE814C"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://apis14ext.loyaltylab.com</con:endpoint><con:request/><con:originalUri>https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="VerifyTransaction" path="/LoyaltyClientRestAPI/DfsClo/VerifyTransaction" id="027cb496-5a80-4525-b307-b3c06243479b"><con:settings/><con:parameters/><con:method name="1" id="f768529a-dc2a-4e6c-a415-562319fa0a54" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:user="https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User">user:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User">user:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Retailer" id="a6dd1a13-9a3c-40d2-b3e1-ce9242468301" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="authenticated" value="true"/>
+  <con:entry key="partnerGuid" value="6e872637-1554-471d-a880-85a51482484c"/>
+  <con:entry key="Mode" value="Partner"/>
+  <con:entry key="Connection" value="Close"/>
+  <con:entry key="content-Type" value="application/json"/>
+  <con:entry key="RetailerGuid" value="456533be-e972-480b-8774-98fb7caea4dd"/>
+  <con:entry key="icsUserId" value="9617"/>
+  <con:entry key="token" value="b8T5JtwhJyo3yU/LiGLJg6SrX4G8iGFwjXc+AK+XND/BqcOVGHSvCyq3bVBEUykA0hBCFiL879CEqG4WuHdB+PNhoaMB+mhvTEOttEZqB5ZbfxaYBXE5Qp6nZY7Tp6W6htwLzL8ixtVFRix1KVy3BQ=="/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://apis14ext.loyaltylab.com</con:endpoint><con:request>{
+  "transactions": [
+    {
+      "transactionReferenceId": 30 ,
+      "offerId": "TibcoCamelCasing1",
+      "qualifiedTransactionAmount":"5.0" ,
+      "rewardDeposited ": 0.0957,
+      "nrid": ""
+    },
+        {
+      "transactionReferenceId": 28,
+      "offerId": "TibcoCamelCasing1",
+      "qualifiedTransactionAmount": 1.0,
+      "rewardDeposited ": 1.0,
+      "nrid": ""
+    }
+  ]
+}</con:request><con:originalUri>https://apis14.loyaltylab.com/loyaltyclientrestapi/Authenticate/User</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
